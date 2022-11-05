@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form action="/action_page.php">
+  Radio Button: <input type="radio" class="myRadio" name="test" required>
+  Radio Button: <input type="radio" class="myRadio" name="test" required>
+  <br>
+  Radio Button: <input type="radio" class="myRadio1" name="test1" required>
+  Radio Button: <input type="radio" class="myRadio1" name="test1" required>
+  <br>
+  Radio Button: <input type="radio" class="myRadio2" name="test2" required>
+  Radio Button: <input type="radio" class="myRadio2" name="test2" required>
+  <input type="submit">
+</form>
+
+<p>Click the "Try it" button to find out if the radio button must be checked before submitting the form.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementsByClassName("myRadio");
+   var y = document.getElementsByClassName("myRadio1");
+    var z = document.getElementsByClassName("myRadio2");
+  
+  for(i = 0; i < 2; i++){
+  	x[i].required;
+      	y[i].required;
+          	z[i].required;
+  }
+
+  
+}
+</script>
+
+</body>
+</html>
